@@ -58,39 +58,39 @@ const TestimonialSection = () => {
   }
   return (
     <StyledSection>
-      <Container>
-        <h2>
-          Our <span>Testimonials</span>
-        </h2>
-        <div className="wrapper">
-          <div className="testimonial-box">
-            <button className="previous-button">
-              <FontAwesomeIcon
-                icon={faChevronLeft}
-                onClick={handlePreviousSlide}
-              />
-            </button>
-            <div style={{ maxWidth: "500px" }}>
-              <p>{testimonial.review}</p>
-              <p>- {testimonial.author}</p>
-            </div>
-            <button className="next-button" onClick={handleNextSlide}>
-              <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+      {/* <Container> */}
+      <h2>
+        Our <span>Testimonials</span>
+      </h2>
+      <div className="wrapper">
+        <div className="testimonial-box">
+          <button className="previous-button">
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              onClick={handlePreviousSlide}
+            />
+          </button>
+          <div style={{ maxWidth: "500px" }}>
+            <p>{testimonial.review}</p>
+            <p>- {testimonial.author}</p>
           </div>
-          <div className="dots">
-            {testimonials.map((dot, index) => (
-              <button
-                className={`dot ${
-                  testimonials[index].review === testimonial.review && "active"
-                }`}
-                key={dot.review}
-                onClick={() => handleDotClick(index)}
-              ></button>
-            ))}
-          </div>
+          <button className="next-button" onClick={handleNextSlide}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
         </div>
-      </Container>
+        <div className="dots">
+          {testimonials.map((dot, index) => (
+            <button
+              className={`dot ${
+                testimonials[index].review === testimonial.review && "active"
+              }`}
+              key={dot.review}
+              onClick={() => handleDotClick(index)}
+            ></button>
+          ))}
+        </div>
+      </div>
+      {/* </Container> */}
       {/* <LeftRazor text="Our Production Process" linkTo="/" /> */}
     </StyledSection>
   )

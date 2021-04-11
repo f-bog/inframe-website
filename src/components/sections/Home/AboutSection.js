@@ -48,6 +48,7 @@ const StyledSection = styled.section`
   align-items: center;
   font-family: Helvetica;
   .content {
+    padding-top: 3em;
     position: relative;
     z-index: 17;
   }
