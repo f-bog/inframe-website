@@ -64,19 +64,22 @@ const TestimonialSection = () => {
         </h2>
         <div className="wrapper">
           <div className="testimonial-box">
-            <button className="previous-button">
-              <FontAwesomeIcon
-                icon={faChevronLeft}
-                onClick={handlePreviousSlide}
-              />
-            </button>
+            <div className="buttons">
+              <button className="previous-button">
+                <FontAwesomeIcon
+                  icon={faChevronLeft}
+                  onClick={handlePreviousSlide}
+                />
+              </button>
+              <button className="next-button" onClick={handleNextSlide}>
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </div>
+
             <div style={{ maxWidth: "90%" }}>
               <p>{testimonial.review}</p>
               <p>- {testimonial.author}</p>
             </div>
-            <button className="next-button" onClick={handleNextSlide}>
-              <FontAwesomeIcon icon={faChevronRight} />
-            </button>
           </div>
           <div className="dots">
             {testimonials.map((dot, index) => (
@@ -138,6 +141,7 @@ const StyledSection = styled.section`
     }
   }
   .testimonial-box {
+    position: relative;
     font-family: Helvetica;
     justify-content: space-around;
     align-items: center;
@@ -147,6 +151,15 @@ const StyledSection = styled.section`
     min-height: 300px;
     padding: 0px 1.5em;
     text-align: left;
+    max-width: 700px;
+    .buttons {
+      position: absolute;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 100%;
+    }
     .next-button,
     .previous-button {
       color: #666666;
@@ -155,6 +168,7 @@ const StyledSection = styled.section`
       cursor: pointer;
       font-size: 2em;
       transition: color 0.2s ease;
+      padding: 0;
       &:hover {
         color: #ed1c24;
       }
