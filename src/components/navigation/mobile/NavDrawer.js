@@ -39,6 +39,7 @@ const StyledDrawer = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: 100%;
     row-gap: 35px;
     z-index: 1001;
     a {
