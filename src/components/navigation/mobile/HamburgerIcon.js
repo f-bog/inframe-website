@@ -1,9 +1,9 @@
 import Hamburger from "hamburger-react"
 import React from "react"
 import styled from "styled-components"
-const HamburgerIcon = () => {
+const HamburgerIcon = ({ handleToggle }) => {
   return (
-    <StyledHamburger>
+    <StyledHamburger onClick={handleToggle}>
       <Hamburger />
     </StyledHamburger>
   )

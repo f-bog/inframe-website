@@ -5,24 +5,37 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import HamburgerIcon from "./navigation/mobile/HamburgerIcon"
 import NavLinks from "./navigation/NavLinks"
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <div className="wrapper">
-      <Link to="/">
-        <StaticImage
-          src="../images/inframe-logo.png"
-          width={150}
-          quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
-          style={{ width: "150px" }}
-          alt="InFrame Logo"
-        />
-      </Link>
-      <HamburgerIcon />
-      <NavLinks />
-    </div>
-  </StyledHeader>
-)
+import NavDrawer from "./navigation/mobile/NavDrawer"
+import { useState } from "react"
+const Header = ({ siteTitle }) => {
+  const [toggleOpen, setToggleOpen] = useState(false)
+
+  const handleToggle = () => {
+    setToggleOpen(!toggleOpen)
+    console.log(toggleOpen)
+  }
+  return (
+    <>
+      <StyledHeader>
+        <div className="wrapper">
+          <Link to="/">
+            <StaticImage
+              src="../images/inframe-logo.png"
+              width={150}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              style={{ width: "150px" }}
+              alt="InFrame Logo"
+            />
+          </Link>
+          <HamburgerIcon handleToggle={handleToggle} />
+          <NavLinks />
+        </div>
+      </StyledHeader>
+      <NavDrawer toggleOpen={toggleOpen} />
+    </>
+  )
+}
 
 const StyledHeader = styled.header`
   position: fixed;
