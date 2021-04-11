@@ -54,7 +54,7 @@ const StyledSection = styled.section`
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 70%);
+    background: rgba(0, 0, 0, 50%);
     ${"" /* clip-path: polygon(0 0, 82% 0, 45% 100%, 0% 100%); */}
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     height: 100%;
@@ -78,6 +78,7 @@ const StyledSection = styled.section`
   @media only screen and (min-width: 768px) {
     .home-razor {
       clip-path: polygon(0 0, 82% 0, 45% 100%, 0% 100%);
+      background: rgba(0, 0, 0, 70%);
       animation: 2s ${razorAnimation} linear;
     }
     .intro-content {

@@ -168,6 +168,7 @@ const StyledSection = styled.section`
       cursor: pointer;
       font-size: 2em;
       transition: color 0.2s ease;
+
       padding: 0;
       &:hover {
         color: #ed1c24;
