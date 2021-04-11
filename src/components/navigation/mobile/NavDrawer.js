@@ -37,14 +37,16 @@ const StyledDrawer = styled.div`
     text-align: right;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    max-height: 400px;
+    height: 100%;
     row-gap: 35px;
     z-index: 1001;
     a {
+      display: block;
       color: white;
       text-decoration: none;
+      margin-bottom: 10px;
       font-size: 2em;
     }
   }
