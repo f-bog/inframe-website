@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import HeroSection from "../components/content/HeroSection"
 import { StaticImage } from "gatsby-plugin-image"
 import ContentSection from "../components/content/ContentSection"
-import TwoColumnBlock from "../components/content/twoColumnBlock"
+import TwoColumnBlock from "../components/content/TwoColumnBlock"
 const AboutPage = () => {
   return (
     <Layout>

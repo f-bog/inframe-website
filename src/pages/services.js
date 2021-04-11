@@ -4,7 +4,7 @@ import Button from "../components/Button"
 import Layout from "../components/layout"
 import ContentSection from "../components/content/ContentSection"
 import HeroSection from "../components/content/HeroSection"
-import TwoColumnBlock from "../components/content/twoColumnBlock"
+
 import SEO from "../components/seo"
 import ServicesButton from "../components/sections/Services/ServicesButton"
 
