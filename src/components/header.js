@@ -34,7 +34,7 @@ const Header = ({ siteTitle }) => {
               alt="InFrame Logo"
             />
           </Link>
-          <div className="social-links">
+          {/* <div className="social-links">
             <a
               className="social"
               href="https://www.instagram.com/inframe_media_prod/?hl=en"
@@ -59,7 +59,7 @@ const Header = ({ siteTitle }) => {
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-          </div>
+          </div> */}
           <HamburgerIcon handleToggle={handleToggle} />
           <NavLinks />
         </div>

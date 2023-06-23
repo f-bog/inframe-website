@@ -22,7 +22,7 @@ const StyledButton = styled.div`
   font-weight: 300;
   /* cursor: pointer; */
   -webkit-tap-highlight-color: transparent;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   background: #020202;
   color: white;
