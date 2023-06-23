@@ -9,9 +9,10 @@ const NavDrawer = ({ toggleOpen }) => {
         <Link to="/">Portfolio</Link>
         <Link to="/services">Services</Link>
         <Link to="/media-production">Process</Link>
+        <Link to="/weddings">Weddings</Link>
         <Link to="/about">About</Link>
         <Link to="contact">Contact</Link>
-        <Link to="/jobs">Jobs</Link>
+        {/* <Link to="/jobs">Jobs</Link> */}
       </nav>
     </StyledDrawer>
   )

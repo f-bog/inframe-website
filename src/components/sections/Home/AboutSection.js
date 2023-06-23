@@ -28,7 +28,7 @@ const AboutSection = () => {
           <Button
             className="button"
             text="Read More"
-            linkTo="/"
+            linkTo="/about"
             center="center"
           />
         </div>

@@ -7,6 +7,12 @@ import HamburgerIcon from "./navigation/mobile/HamburgerIcon"
 import NavLinks from "./navigation/NavLinks"
 import NavDrawer from "./navigation/mobile/NavDrawer"
 import { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faFacebookSquare,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 const Header = ({ siteTitle }) => {
   const [toggleOpen, setToggleOpen] = useState(false)
 
@@ -28,6 +34,32 @@ const Header = ({ siteTitle }) => {
               alt="InFrame Logo"
             />
           </Link>
+          <div className="social-links">
+            <a
+              className="social"
+              href="https://www.instagram.com/inframe_media_prod/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a
+              className="social"
+              href="https://www.facebook.com/inframemediaproductions"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faFacebookSquare} />
+            </a>
+            <a
+              className="social"
+              href="https://au.linkedin.com/company/inframe-media-productions"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </div>
           <HamburgerIcon handleToggle={handleToggle} />
           <NavLinks />
         </div>
@@ -53,6 +85,12 @@ const StyledHeader = styled.header`
     height: 100%;
     width: 90%;
     max-width: 1160px;
+  }
+
+  .social-links {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
   }
 `
 

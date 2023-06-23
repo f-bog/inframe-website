@@ -35,7 +35,7 @@ const ServicesSection = () => {
             connects with your audience.
           </p>
           <p>Getting your idea in to the frame.</p>
-          <Button linkTo="/" text="Our Services" />
+          <Button linkTo="/services" text="Our Services" />
         </div>
       </div>
       <div className="red-content">

@@ -7,6 +7,7 @@ import HeroSection from "../components/content/HeroSection"
 
 import SEO from "../components/seo"
 import ServicesButton from "../components/sections/Services/ServicesButton"
+import Marquee from "../components/Marquee"
 
 const services = () => {
   return (
@@ -28,6 +29,21 @@ const services = () => {
         </h1>
         <hr />
       </ContentSection>
+      <Marquee
+        children={
+          <>
+            <ServicesButton text="Branding Videos" linkTo="/" />
+            <ServicesButton text="Product Videos" linkTo="/" />
+            <ServicesButton text="Web Videos" linkTo="/" />
+            <ServicesButton text="Commercials" linkTo="/" />
+            <ServicesButton text="Testimonial Videos" linkTo="/" />
+            <ServicesButton text="Training Videos" linkTo="/" />
+            <ServicesButton text="Live Event Videos" linkTo="/" />
+            <ServicesButton text="Motion Graphics" linkTo="/" />
+            <ServicesButton text="Sporting Videos" linkTo="/" />
+          </>
+        }
+      />
       <ContentSection>
         <p>
           InFrame Media Productions is a full service Gold Coast based video
@@ -41,17 +57,18 @@ const services = () => {
           We do this through many formats including:
         </p>
       </ContentSection>
-      <ContentSection>
-        <ServicesButton text="Branding Videos" linkTo="/" />
-        <ServicesButton text="Product Videos" linkTo="/" />
-        <ServicesButton text="Web Videos" linkTo="/" />
-        <ServicesButton text="Commercials" linkTo="/" />
-        <ServicesButton text="Testimonial Videos" linkTo="/" />
-        <ServicesButton text="Training Videos" linkTo="/" />
-        <ServicesButton text="Live Event Videos" linkTo="/" />
-        <ServicesButton text="Motion Graphics" linkTo="/" />
-        <ServicesButton text="Sporting Videos" linkTo="/" />
-        {/* <TwoColumnBlock center="center">
+      <ContentSection></ContentSection>
+      {/* <ContentSection> */}
+      {/* <ServicesButton text="Branding Videos" linkTo="/" />
+      <ServicesButton text="Product Videos" linkTo="/" />
+      <ServicesButton text="Web Videos" linkTo="/" />
+      <ServicesButton text="Commercials" linkTo="/" />
+      <ServicesButton text="Testimonial Videos" linkTo="/" />
+      <ServicesButton text="Training Videos" linkTo="/" />
+      <ServicesButton text="Live Event Videos" linkTo="/" />
+      <ServicesButton text="Motion Graphics" linkTo="/" />
+      <ServicesButton text="Sporting Videos" linkTo="/" /> */}
+      {/* <TwoColumnBlock center="center">
           <StaticImage
             src="../images/Kim-Rafael-Llige.png"
             quality={100}
@@ -69,7 +86,7 @@ const services = () => {
             style={{ maxWidth: "500px" }}
           />
         </TwoColumnBlock> */}
-      </ContentSection>
+      {/* </ContentSection> */}
     </Layout>
   )
 }

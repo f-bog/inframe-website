@@ -135,7 +135,7 @@ const ProcessSection = () => {
           <div className="process-content">
             <h3>{selectedProcess.type.toUpperCase()}</h3>
             <p>{selectedProcess.content}</p>
-            <Link to="/">
+            <Link to="/media-production">
               Read More <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -228,7 +228,7 @@ const StyledSection = styled.section`
       background: #ed1c24;
       a {
         display: block;
-        
+
         color: black;
         font-weight: 900;
         text-decoration: none;
@@ -254,7 +254,8 @@ const StyledSection = styled.section`
         }
       }
       .process-content {
-      width: 70%;
+        width: 70%;
+      }
     }
   }
 `

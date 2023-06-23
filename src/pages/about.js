@@ -26,26 +26,47 @@ const AboutPage = () => {
         </h1>
         <hr />
         <p>
-          InFrame Media Productions opened their firststudio in the Philippines
+          InFrame Media Productions opened their first studio in the Philippines
           through its founder, Pablo Llige, in 1990. From then on, InFrame Media
           Productions has been in the forefront of media coverage for everything
-          from AVP's, Photo and Video Coverage and Editing services. InFrame
-          Media Productions is a highly sought-after outfit as its reputation
-          for high level professional media services remains unsurpassed.
+          from photo and video coverage and editing services.{" "}
+        </p>
+        <p>
+          InFrame Media Productions is a highly sought-after outfit as its
+          reputation for high level professional media services remains
+          unsurpassed.
         </p>
         <p>
           Following in his father’s footsteps, Kim Rafael Llige has opened
           InFrame Media Productions’ first studio on the Gold Coast in
-          Australia. Kim offers a variety of services including Editing,
-          Videographer and Photography as well as Video AVP, Sports, Photography
-          and Event Coverage.
+          Australia. Kim offers a variety of services including editing,
+          videographer and photography as well as online content, sports
+          photography and event coverage. Kim Rafael Llige earned a Bachelors
+          Degree in Digital Film Making from De La Salle University.
         </p>
         <p>
-          Kim Rafael Llige earned a Bachelors Degree in Digital Film Making from
-          De La Salle University. He has over eight years experience as a Video
-          Camera Operator for a prime-time National Television Network as well
-          as two years experience in Video-Directing and shooting various major
-          Corporate Events.
+          InFrame Media is a Gold Coast-based video production company that
+          offers a full range of high-quality video production and photography
+          services. Our talented and dedicated team of professionals are
+          experienced in producing visually stunning content that tells a
+          brand's story seamlessly. From concept development to script writing
+          and camera work to editing, we are passionate about bringing stories
+          to life through creative and effective visual media.
+        </p>
+        <p>
+          Our goal is to produce video content and images that communicate a
+          brand's message effectively, and we understand that every project is
+          unique. That's why we offer customised video production solutions that
+          suit individual business needs. Our equipment and industry knowledge
+          enables us to deliver top quality results that exceed client
+          expectations.
+        </p>
+        <p>
+          Whether you need a corporate video, social media content, product
+          launch video or simply want to capture an event, we got you covered.
+          With our primary focus on providing exceptional video content, InFrame
+          Media is the go-to video production company for businesses that want
+          to engage and connect with their customers through visual media.
         </p>
       </ContentSection>
       <ContentSection>
